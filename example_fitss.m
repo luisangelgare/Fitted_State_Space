@@ -50,7 +50,7 @@ fmax = 500;           % Maximum frequency for poles (rad/s)
 poles1 = -1 - 1i * linspace(fmin, fmax, degree); % Initial pole guess
 
 % Fit the state-space model using the frequency-domain data
-GFL_VSC = FittedStateSpace2(Yqd0_full, fd0, poles1, pole_tol, 1);
+GFL_VSC = fitss2(Yqd0_full, fd0, poles1, pole_tol, 1);
 
 %% Compute Frequency Response and Visualize Results
 
