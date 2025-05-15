@@ -1,16 +1,22 @@
-# Fitted-State-Space Tool
+# Fitted-State-Space Tool (fitss2)
 
-This is a methodology for constructing a state-space representation of a black-box-type Voltage Source Converter (VSC) using its input-output frequency response characterization. The proposed approach operates within the synchronous reference frame (dq0), where the VSC’s admittance (for impedance improvements will be come later) is identified in the frequency domain. By applying a method based on the Pole-Collapsing Column Fitting (PCCF), a linear and stable state-space model is obtained. To ensure model accuracy while reducing computational complexity, order-reduction techniques such as Singular Value Decomposition (SVD) and balanced realization are utilized.
+This is a data acquisition-based methodology to construct a state-space model of black-box Voltage Source Converters (VSCs) for application in small-signal stability analysis in modern power-systems using the Component Connection Method (CCM). This approach determines the fitted state-space (FSS) model through the frequency-domain (FD) admittance matrix of the VSC, identified via the input-output responses of voltage and current at the point of connection (POC). By applying a multiple single-input single-output (SISO) vector fitting array, a stable FSS representation is determined with high accuracy. Order reduction methodologies such as Singular Value Decomposition (SVD) and Balanced Realization (BR) are then employed to generate the minimal representation of the VSC, eliminating redundant states and reducing computational burden. 
+
+*Full access to the tool will be provided once the paper is accepted for the ISGT 2025 conference. For now, this repository only contains the IEEE 9-bus system parameters used in the case study submitted to the ISGT 2025 conference.*
+
+# Network parameters:
+
+- See the file: "IEEE9_GFL_GFM.xlsx"
 
 # How to use:
 
-- Copy all the functions to the common project folder.
-- Use the function "FittedStateSpace2" to determine the state-space model.
+- Copy the function to the common project folder.
+- Use the function "fitss2" to determine the fitted state-space model.
 
 # Tutorial:
   
-  Run the file "example_fitss.m" and follow the structure of the inputs and outputs.
+  Check the file "example_fitss.m" and follow the structure of the inputs and outputs (the functions and the script will be updated).
 
 # How to cite:
 
-Garcia-Reyes L. A., Prieto-Araujo E., A. Lacerda V., "Reduced-Order State-Space Modeling of VSCs based on Frequency-Domain Identification", 2025 IEEE PES Innovative Smart Grid Technologies Europe (ISGT EUROPE),
+Garcia-Reyes, Luis A.; Prieto-Araujo, Eduardo; A. Lacerda, Vinícius; Arévalo-Soler, Josep; Gomis-Bellmunt, Oriol; Martin-Almenta, Macarena; Nuño-Martínez, Edgar; Renedo, Javier, "Data-Driven State-Space Modeling for Small-Signal Stability Analysis of Black-Box Power Converters", 2025 IEEE PES Innovative Smart Grid Technologies Europe (ISGT EUROPE), submmited for review. 
