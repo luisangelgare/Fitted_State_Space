@@ -13,7 +13,7 @@ The **fitss** has been validated and documented in the following scientific publ
 
 <b>BibTeX Citation (SIaD Tool)</b>
 
-@misc{CITCEA-SIaD-Tool,<br>
+@misc{CITCEA-fitted-state-space,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;title={Data-Driven State-Space Modeling for Small-Signal Stability Analysis of Black-Box Power Converters},<br>
 &nbsp;&nbsp;&nbsp;&nbsp;author={Garcia-Reyes, Luis A. and Prieto-Araujo, Eduardo and Lacerda, Vinicius A. and Arévalo-Soler, Josep and Gomis-Bellmunt, Oriol and Martin-Almenta, Macarena and Nuño-Martínez, Edgar and Renedo, Javier},<br>
 &nbsp;&nbsp;&nbsp;&nbsp;year={2025},<br>
